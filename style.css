@@ -1,0 +1,236 @@
+/* ============================
+   RESET
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ============================
+   NAVIGATION BAR
+============================ */
+.navbar {
+  background: #ffffff !important;
+  padding: 20px 0 !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.navbar .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin-right: 20px;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #8B0000 !important;
+}
+
+.navbar svg .a {
+  fill: #8B0000;
+}
+
+.dropdown-menu {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+  background-color: #f4d9d9;
+  color: #8B0000;
+}
+
+/* ============================
+   HERO SECTION
+============================ */
+.bg-image {
+  background-image: url(); /* replace with real image */
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+
+.bg-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.bg-image h1,
+.bg-image h3,
+.bg-image p {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-image h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.bg-image h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ============================
+   HERO ICON BOXES
+============================ */
+.d-flex.flex-row {
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.box-content {
+  background: #0e0d0ddd;
+  padding: 25px;
+  border-radius: 12px;
+  width: 240px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.box-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+
+.box-content h3 {
+  color: #8B0000;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* ============================
+   MENU SECTION
+============================ */
+.menu-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.menu-section h2 {
+  font-size: 2.5rem;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.menu-section small {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #8B0000;
+}
+
+/* ============================
+   MENU CARDS
+============================ */
+.menu-item {
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.09);
+  transition: 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.15);
+}
+
+.menu-item img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.price {
+  float: right;
+  color: #8B0000;
+  font-weight: 700;
+}
+
+/* ============================
+   FOOTER 
+============================ */
+footer {
+  margin-top: 60px;
+  background: #111;
+  color: #ddd;
+  padding: 40px;
+  text-align: center;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+@media (max-width: 992px) {
+  .bg-image h1 {
+    font-size: 3rem;
+  }
+
+  .bg-image h3 {
+    font-size: 1.6rem;
+  }
+
+  .box-content {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-image {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .bg-image h1 {
+    font-size: 2.4rem;
+  }
+
+  .bg-image h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .d-flex.flex-row {
+    justify-content: center;
+  }
+
+  .box-content {
+    width: 90%;
+  }
+
+  .bg-image h1 {
+    font-size: 2rem;
+  }
+}
