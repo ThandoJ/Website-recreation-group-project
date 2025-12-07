@@ -87,14 +87,13 @@
     <!-- Background image -->
     
     <div class="bg-image">
-      <img src="">
-      <div class="container text-end align-center">
-        <h1>Artisan-made Italian</h1>
+      <div class="container text-center align-center">
+        <h1 class="pt-5">Artisan-made Italian</h1>
         <h3>brunch, lunch, & dinner</h3>
       </div>
 
       <!-- DETAILS -->
-      <div class="d-flex flex-row">
+      <div class="d-flex flex-row justify-content-center mt-5">
         <div class="box-content">
           <a href="#">
             <svg
@@ -204,7 +203,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="mb-5 text-center">
         <h3>Awards & Reviews</h3>
         <p>
           Don't just take our word for it! Our reputation speaks for itself.
@@ -215,16 +214,20 @@
    </div>
 
   </div>
+
   <div class="container">
   
     <div class="text-center">
+
+  <!-- STARTERS -->
+  <section class="container menu-section" id="starters">
+
+    <div class="text-center p-5">
+
       <h3>ABOUT US</h3>
       <h6>Food. Art. Gathering</h6>
       <p>Café Piazza is an authentic Italian café that brings to life the flavors and personality of Sicily. See why the combination of food, art, and gathering makes us more than an eating destination - We're a piazza, an experience.</p>
     </div>
-
-    <div class="text-white d-flex align-items-center justify-content-center"></div>
-   </div>
 
    <div class="position-relative">
       <img src="images/CP_WhyPiazza1600x373.png" alt="Cafe Piazza" class="img-fluid">
@@ -236,18 +239,16 @@
       </div>
     </div>
 
-    <div class="text-center">
+    <div class="text-center p-5">
       <h3>THE ART OF CONVERSATION</h3>
       <p>When you walk into Café Piazza, our hope is that you are transported into a Sicilian piazza where people are at the center. In Sicily throughout each day, everyone gathers in the piazza. This is a common ground where the bustle of friends and neighbors can visit each other, enjoy a gelato or a cappuccino, or grab a bit to eat. This is the inspiration behind Café Piazza. We wanted to recreate the essence of this daily camaraderie and bring it home to you - our St. Louis family - who we knew would appreciate the tradition of food and community Café Piazza embodies. Welcome to our town square, our little slice of Italian tradition - our piazza. We can't wait to meet you and serve you.</p>
     </div>
 
-   </div>
-
-  </div>
+  </section>
   
 
   <!-- Footer Section -->
-<footer id="colophon" class="amg-colophon" role="contentinfo">
+    <footer id="colophon" class="amg-colophon" role="contentinfo">
 
 			
 				<div id="site-info">
@@ -304,7 +305,7 @@
 
 			</footer>
 
-      <script>
+  <script>
 		var cb = function() {
 			var l = document.createElement('link'); l.rel = 'stylesheet';
 			l.href = 'https://www.cafepiazza.com/wp-content/themes/cafepiazza/production/styles/site.min.css';
@@ -327,11 +328,11 @@
 		    	},
 		    	timeout: 2000
 		  	});
-		</script>
+	</script>
 
     <script>
  						function amgCounter(){for(var e=document.getElementsByClassName("counter"),r={},t={start:0,speed:70,prefix:"",suffix:""},n=function(e,r,a,s,u){e.params.prefix=e.params.prefix,e.params.suffix=e.params.suffix,r<=a?(e.innerHTML=e.params.prefix+r.toString()+e.params.suffix,r++,setTimeout(function(){n(e,r,a,!1,u)},5e3/t.speed)):i(e,0,u,a)},i=function(e,r,n,a){e.params.prefix=e.params.prefix,e.params.suffix=t.suffix,r<=n&&(e.innerHTML=e.params.prefix+a.toString()+"."+r.toString()+e.params.suffix,r++,setTimeout(function(){i(e,r,n,a)},1e3/t.speed))},a=0;a<e.length;a++)if(r.value=parseFloat(e[a].innerHTML.trim()),e[a].params=t,r.value%1==0)n(e[a],t.start,r.value,!1);else{var s=r.value.toString().split("."),u=parseInt(s[0]),o=parseInt(s[1]);n(e[a],t.start,u,!0,o)}}var counterDiv=document.querySelector(".amg-counter-container"),counterFired=!1,isInView=function(e){"use strict";var r=e.getBoundingClientRect();return r.top<=window.innerHeight-100};window.addEventListener("scroll",function(){isInView(counterDiv)&&!counterFired&&(amgCounter(),counterFired=!0)});
-					</script>
+		</script>
 
   <!-- Bootstrap JS -->
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
