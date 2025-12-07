@@ -54,7 +54,7 @@ body {
    HERO SECTION
 ============================ */
 .bg-image {
-  background-image: url(); /* replace with real image */
+  background-image: url(https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/488467238_1259100259556889_963231477930593620_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jyK4iqiWInUQ7kNvwHokp9v&_nc_oc=Admo0aOQZeBN1QhhZydBisxLTVWksCPbVbE6YzVBUA-zRI4qKAZCQT-CCLkjzgIFI-ztGFGpKottocDDGZ0YQz8R&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=tkdWO54Pkhxj8eqjzrBzIw&oh=00_Afm-4--GMs3co-D2gaX9eEk_uPrr_liSOmOA9ah3Xb_Zxw&oe=693B9280); /* replace with real image */
   height: 80vh;
   background-position: center;
   background-size: cover;
