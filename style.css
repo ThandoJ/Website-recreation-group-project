@@ -58,6 +58,10 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .bg-image::after {
