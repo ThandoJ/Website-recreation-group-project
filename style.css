@@ -55,15 +55,13 @@ body {
 ============================ */
 .bg-image {
   background-image: url(https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/488467238_1259100259556889_963231477930593620_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jyK4iqiWInUQ7kNvwHokp9v&_nc_oc=Admo0aOQZeBN1QhhZydBisxLTVWksCPbVbE6YzVBUA-zRI4qKAZCQT-CCLkjzgIFI-ztGFGpKottocDDGZ0YQz8R&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=tkdWO54Pkhxj8eqjzrBzIw&oh=00_Afm-4--GMs3co-D2gaX9eEk_uPrr_liSOmOA9ah3Xb_Zxw&oe=693B9280); 
-  height: 80vh;
   background-position: center;
   background-size: cover;
+  position: relative;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
-  color: white;
-  position: relative;
 }
 
 .bg-image::after {
@@ -78,6 +76,7 @@ body {
 .bg-image p {
   position: relative;
   z-index: 2;
+  color: #ddd;
 }
 
 .bg-image h1 {
@@ -94,11 +93,11 @@ body {
 /* ============================
    HERO ICON BOXES
 ============================ */
-.d-flex.flex-row {
+.d-flex, .flex-row {
   margin-top: 40px;
   position: relative;
   z-index: 2;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -106,7 +105,8 @@ body {
   background: #0e0d0ddd;
   padding: 25px;
   border-radius: 12px;
-  width: 240px;
+  width: 100%;
+  max-width: 240px;
   text-align: center;
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
@@ -123,6 +123,20 @@ body {
   font-size: 1.3rem;
   margin-top: 15px;
   font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .box-content {
+    max-width: 90%;
+  }
+
+  .box-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .box-content p {
+    font-size: 0.9rem;
+  }
 }
 
 
@@ -192,7 +206,6 @@ body {
    FOOTER 
 ============================ */
 footer {
-  margin-top: 60px;
   background: #111;
   color: #ddd;
   padding: 40px;
